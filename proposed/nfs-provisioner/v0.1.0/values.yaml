@@ -17,3 +17,6 @@ persistence:
 # Toggle RBAC on and off
 rbac:
   enabled: true
+
+parameters:
+  mountOptions: 4.1

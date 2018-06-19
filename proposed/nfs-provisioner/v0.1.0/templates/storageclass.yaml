@@ -13,4 +13,4 @@ metadata:
     kubernetes.io/cluster-service: "true"
 provisioner: local.net/{{ template "nfs.fullname" . }}
 parameters:
-  mountOptions: "vers=4.1"
+  mountOptions: "vers={{ .Values.parameters.mountOptions }}"
