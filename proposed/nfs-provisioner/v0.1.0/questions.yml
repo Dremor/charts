@@ -46,3 +46,10 @@ questions:
   type: int
   label: NFS Host Port
   group: "NFS Settings"
+- variable: parameters.mountOptions
+  default: "4.1"
+  required: false
+  description: "specify the protocol version."
+  type: string
+  label: NFS protocol version
+  group: "NFS Settings"
