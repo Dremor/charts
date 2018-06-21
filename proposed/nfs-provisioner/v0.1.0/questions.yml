@@ -58,8 +58,8 @@ questions:
   show_subquestion_if: false
   subquestions:
   - variable: parameters.mountOptions
-  default: "4.1"
-  required: false
-  description: "specify the protocol version."
-  type: string
-  label: NFS protocol version
+    default: "4.1"
+    required: false
+    description: "specify the protocol version."
+    type: string
+    label: NFS protocol version
