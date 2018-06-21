@@ -46,7 +46,7 @@ questions:
   type: int
   label: NFS Host Port
   group: "NFS Settings"
- - variable: DefaultNfsParam
+- variable: DefaultNfsParam
   default: "true"
   description: "Use default NFS parameters"
   label: Use default NFS parameters
