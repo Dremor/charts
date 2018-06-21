@@ -46,10 +46,20 @@ questions:
   type: int
   label: NFS Host Port
   group: "NFS Settings"
-- variable: parameters.mountOptions
+  - variable: defaultImage
+  default: "true"
+  description: "Use default NFS parameters"
+  label: Use default NFS parameters
+  type: enum
+  group: "NFS Settings"
+  options:
+    - "true"
+    - "false"
+  show_subquestion_if: false
+  subquestions:
+  - variable: parameters.mountOptions
   default: "4.1"
   required: false
   description: "specify the protocol version."
   type: string
   label: NFS protocol version
-  group: "NFS Settings"
