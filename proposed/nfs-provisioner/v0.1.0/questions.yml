@@ -39,13 +39,6 @@ questions:
   label: NFS Host Path
   required: true
   group: "NFS Settings"
-- variable: nfs.hostPort
-  default: "2049"
-  required: true
-  description: "specify the host port used for nfs-provisioner server"
-  type: int
-  label: NFS Host Port
-  group: "NFS Settings"
 - variable: DefaultNfsParam
   default: "true"
   description: "Use default NFS parameters"
@@ -63,3 +56,10 @@ questions:
     description: "specify the protocol version."
     type: string
     label: NFS protocol version
+- variable: nfs.hostPort
+  default: "2049"
+  required: true
+  description: "specify the host port used for nfs-provisioner server"
+  type: int
+  label: NFS Host Port
+  group: "NFS Settings"
