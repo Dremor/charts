@@ -18,7 +18,7 @@ questions:
     type: string
     label: NFS Image Name
   - variable: image.tag
-    default: "v1.0.8"
+    default: "v1.0.9"
     description: "NFS image tag"
     type: string
     label: Image Tag
@@ -39,6 +39,23 @@ questions:
   label: NFS Host Path
   required: true
   group: "NFS Settings"
+- variable: DefaultNfsParam
+  default: "true"
+  description: "Use default NFS parameters"
+  label: Use default NFS parameters
+  type: enum
+  group: "NFS Settings"
+  options:
+    - "true"
+    - "false"
+  show_subquestion_if: false
+  subquestions:
+  - variable: parameters.mountOptions
+    default: "4.1"
+    required: false
+    description: "specify the protocol version."
+    type: string
+    label: NFS protocol version
 - variable: nfs.hostPort
   default: "2049"
   required: true
